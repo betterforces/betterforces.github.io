@@ -1,6 +1,5 @@
 # Site settings
 destination: _site
-source: src
 title: Better Forces
 # email: your-email@betterforces.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -14,3 +13,10 @@ github_username:  betterforces
 markdown: kramdown
 sass:
   sass_dir: _sass
+
+exclude:
+  - vendor
+  - betterforces.sublime-workspace
+  - betterforces.sublime-project
+  - Gemfile*
+  - README.md
