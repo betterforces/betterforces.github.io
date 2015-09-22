@@ -1,5 +1,6 @@
 # Site settings
-destination: ../_site
+destination: _site
+source: src
 title: Better Forces
 # email: your-email@betterforces.com
 description: > # this means to ignore newlines until "baseurl:"
