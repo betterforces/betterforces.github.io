@@ -1,0 +1,13 @@
+# Site settings
+destination: ../_site
+title: Better Forces
+# email: your-email@betterforces.com
+description: > # this means to ignore newlines until "baseurl:"
+  Fighting the War on Ignorance and Complacency.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://betterforces.com" # the base hostname & protocol for your site
+twitter_username: betterforces
+github_username:  betterforces
+
+# Build settings
+markdown: kramdown

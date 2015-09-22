@@ -1,0 +1,21 @@
+{
+  "folders":
+  [
+    {
+      "folder_exclude_patterns":
+      [
+        ".git"
+      ],
+      "path": "."
+    }
+  ],
+  "settings":
+  {
+    "FuzzyFilePath":
+    {
+    },
+    "detect_indentation": false,
+    "tab_size": 2,
+    "translate_tabs_to_spaces": true
+  }
+}
