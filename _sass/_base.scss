@@ -1,3 +1,7 @@
+*,
+*:before,
+*:after { box-sizing: border-box; }
+
 /**
  * Reset some basic elements
  */
@@ -203,4 +207,120 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * Forms
+ */
+ input[type="text"],
+ input[type="password"],
+ input[type="date"],
+ input[type="datetime"],
+ input[type="datetime-local"],
+ input[type="month"],
+ input[type="week"],
+ input[type="email"],
+ input[type="number"],
+ input[type="search"],
+ input[type="tel"],
+ input[type="time"],
+ input[type="url"],
+ textarea {
+   box-shadow: none;
+   outline: none;
+   background-color: #fff;
+   border: 2px solid rgb(238,238,238);
+   transition: all .3s ease-out;
+ }
+
+ // input:invalid {
+ //   border: 1px solid red;
+ // }
+
+ // input:valid {
+ //   border: 1px solid green;
+ // }
+
+input:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: lighten(lightgrey, 15%);
+  border: 2px solid darken(rgb(238,238,238), 10%);
+}
+
+.form-hint {
+  color: #222;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+
+.application-form {
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.group {
+  margin: 0 auto 20px;
+  display: block;
+  // width: 90%;
+
+  // @include media-query($on-laptop) {
+    width: 100%;
+  // }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li { text-align: left; }
+  }
+
+  input,
+  label,
+  select,
+  button {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 8px;
+    font-family: $base-font-family;
+  }
+
+  label {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+  }
+
+  input[type="checkbox"] {
+    display: inline;
+    width: initial;
+    padding: 5px;
+
+    & + label {
+      display: inline;
+      width: initial;
+    }
+  }
+
+  button {
+    padding: 15px;
+    background-color: darkkhaki;
+    border: none;
+    color: darken(darkkhaki, 35%);
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+
+    &:hover {
+      background-color: darken(darkkhaki, 10%);
+    }
+  }
+
 }
